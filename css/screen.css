@@ -388,7 +388,8 @@ a:focus {
 .c-nav__link--meta:active {
   color: #6c6c75;
 }
-.is-selected :c-nav__link,
+.is-selected,
+.c-nav__link,
 .c-nav__link:hover,
 .c-nav__link:focus {
   color: #5051db;
@@ -406,7 +407,22 @@ a:focus {
     padding: 8px 16px;
   }
 }
-
+.c-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.c-header__nav {
+  display: none;
+}
+@media (min-width: 992px) {
+  .c-header {
+    display: flex;
+  }
+  .c-header__nav {
+    display: block;
+  }
+}
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
